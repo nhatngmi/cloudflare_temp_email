@@ -12,7 +12,6 @@ keep_vars = true
 # [assets]
 directory = "../frontend/dist/"
 binding = "ASSETS"
-run_worker_first = true
 
 # enable cron if you want set auto clean up
 # [triggers]
