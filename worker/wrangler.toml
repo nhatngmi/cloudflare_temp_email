@@ -3,10 +3,10 @@ main = "src/worker.ts"
 compatibility_date = "2025-04-01"
 compatibility_flags = [ "nodejs_compat" ]
 keep_vars = true
-# if you want use custom_domain, you need to add routes
-# routes = [
-# 	{ pattern = "temp-email-api.xxxxx.xyz", custom_domain = true },
-# ]
+
+routes = [
+	{ pattern = "mailapi.angryboi.com", custom_domain = true },
+]
 
 # if you want deploy worker with frontend assets, you need to add assets
 # [assets]
@@ -27,7 +27,7 @@ binding = "ASSETS"
 # ANNOUNCEMENT = "Custom Announcement"
 # always show ANNOUNCEMENT even no changes
 # ALWAYS_SHOW_ANNOUNCEMENT = true
-PREFIX = "tmp"
+PREFIX = "meomeo"
 # address check REGEX, if not set, will not check
 # ADDRESS_CHECK_REGEX = "^(?!.*admin).*"
 # address name replace REGEX, if not set, the default is [^a-z0-9]
